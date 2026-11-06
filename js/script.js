@@ -36,5 +36,5 @@ function closeModal(modal) {
 // ===== Año dinámico =====
 const footer = document.querySelector('.site-footer p');
 if (footer) {
-  footer.textContent = `© ${new Date().getFullYear()} Alex Styles · Hecho con dedicación`;
+  footer.textContent = `© ${new Date().getFullYear()} jissbossh · Hecho con dedicación`;
 }
