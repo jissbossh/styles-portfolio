@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de Jorge — Diseñador y desarrollador front-end." />
+  <title>Jorge Sierra Suárez · Portafolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="nav__logo" href="#hero">AS<span>.</span></a>
+      <ul class="nav__list">
+        <li><a href="#about" class="nav__link">Sobre mí</a></li>
+        <li><a href="#projects" class="nav__link">Proyectos</a></li>
+        <li><a href="#skills" class="nav__link">Habilidades</a></li>
+        <li><a href="#contact" class="nav__link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Diseñador &amp; Desarrollador Front-End</p>
+        <h1 class="hero__title">Hola, soy <span class="accent">Jorge Iván Sierra Suárez</span></h1>
+        <p class="hero__text">
+          Construyo experiencias digitales accesibles, responsivas y con personalidad.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contact" class="btn btn--ghost">Contactar</a>
+        </div>
+      </div>
+      <div class="hero__avatar" aria-hidden="true">
+        <div class="hero__ring"></div>
+        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&q=80"
+             alt="" class="hero__img" />
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="section__title">Sobre mí</h2>
+      <p class="section__lead">
+        Soy Jorge, especialista en interfaces con más de 6 años de experiencia creando
+        productos digitales centrados en el usuario. Me apasiona el detalle tipográfico,
+        el rendimiento y la accesibilidad.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section__title">Proyectos</h2>
+      <div class="projects-grid">
+        <article class="card" data-modal="modal-1">
+          <div class="card__media card__media--1"></div>
+          <h3 class="card__title">Nova Banking</h3>
+          <p class="card__desc">App financiera con dashboard adaptativo.</p>
+          <button class="card__btn" type="button">Ver detalle</button>
+        </article>
+        <article class="card" data-modal="modal-2">
+          <div class="card__media card__media--2"></div>
+          <h3 class="card__title">Orbit CMS</h3>
+          <p class="card__desc">Sistema de gestión de contenidos modular.</p>
+          <button class="card__btn" type="button">Ver detalle</button>
+        </article>
+        <article class="card" data-modal="modal-3">
+          <div class="card__media card__media--3"></div>
+          <h3 class="card__title">Pulse Fit</h3>
+          <p class="card__desc">Landing de fitness con animaciones fluidas.</p>
+          <button class="card__btn" type="button">Ver detalle</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section__title">Habilidades</h2>
+      <ul class="skills">
+        <li class="skills__item" data-tooltip="HTML5 semántico y accesible">HTML5</li>
+        <li class="skills__item" data-tooltip="CSS Grid, Flexbox y variables">CSS3</li>
+        <li class="skills__item" data-tooltip="DOM, ES6+ y módulos">JavaScript</li>
+        <li class="skills__item" data-tooltip="Componentes reutilizables">React</li>
+        <li class="skills__item" data-tooltip="Diseño de interfaces">Figma</li>
+        <li class="skills__item" data-tooltip="Control de versiones">Git</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section section--contact">
+      <h2 class="section__title">Contacto</h2>
+      <p class="section__lead">¿Tienes un proyecto en mente? Hablemos.</p>
+      <a href="mailto:Jorge@example.com" class="btn btn--primary">Jorge@example.com</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 jissbossh · Hecho con dedicación</p>
+  </footer>
+
+  <!-- Modales -->
+  <div class="modal" id="modal-1" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__content">
+      <button class="modal__close" data-close aria-label="Cerrar">&times;</button>
+      <h3>Nova Banking</h3>
+      <p>Aplicación financiera con dashboard adaptativo, gráficos interactivos y modo offline. Stack: React + CSS Grid.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-2" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__content">
+      <button class="modal__close" data-close aria-label="Cerrar">&times;</button>
+      <h3>Orbit CMS</h3>
+      <p>Sistema de gestión de contenidos modular, con editor WYSIWYG y sistema de roles. Stack: Node + Express.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-3" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__content">
+      <button class="modal__close" data-close aria-label="Cerrar">&times;</button>
+      <h3>Pulse Fit</h3>
+      <p>Landing de fitness con animaciones fluidas, contadores y formulario de suscripción. Stack: HTML + CSS.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
